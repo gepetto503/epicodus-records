@@ -1,5 +1,20 @@
 # RecordLabel
 
+If our Epicodus CSS/Design 2017 cohort ran a record label, all the bands would be named after our inside jokes, and we would have a website.  Well, GUESS WHAT?  I GOT a website JUST LIKE THAT!
+
+## What can one do on this fictional-ass website?
+User can:
+	Visit a page to see a gallery of artists on the record label
+	Click one and visit that artist's profile page with more details
+	Visit an about page that tells the story of the record label
+
+
+Admin can:
+	Add, edit or delete artists from the app and the database.
+
+
+
+# Angular Info
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
