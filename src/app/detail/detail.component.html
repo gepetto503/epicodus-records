@@ -1,0 +1,12 @@
+<div class="artist-detail">
+  <div class="artist-detail-image">
+    <img src="{{(artistToDisplay | async)?.imageUrl}}" alt="{{(artistToDisplay | async)?.name}}">
+  </div>
+  <div class="artist-detail-text">
+    <h4>{{(artistToDisplay | async)?.name}}</h4>
+    <h4>{{(artistToDisplay | async)?.numberOfMembers}}</h4>
+    <h4>{{(artistToDisplay | async)?.genre}}</h4>
+    <h4>{{(artistToDisplay | async)?.hitSingle}}</h4>
+    <div class="button" (click)="goBack()">Back</div>
+  </div>
+</div>

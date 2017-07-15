@@ -1,0 +1,17 @@
+<!--loop knows what artists is because it's in the components class selector-->
+<!--that list comes from FirebaseListObservable-->
+
+<div *ngFor="let artist of artists | async"  class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(artist)">{{artist.name}}</h3>
+
+    <!--only viewable to user when on admin route-->
+    <div class="edit" *ngIf="currentRoute === '/admin'">
+      {{artist.name}}
+      <hr>
+      <app-edit [selectedArtist]="artist"></app-edit>
+    </div>
+    <!--only viewable to user when on admin route-->
+
+  </div>
+</div>

@@ -2,7 +2,7 @@
 
 If our Epicodus CSS/Design 2017 cohort ran a record label, all the bands would be named after our inside jokes, and we would have a website.  Well, GUESS WHAT?  I GOT a website JUST LIKE THAT!
 
-## What can one do on this fictional-ass website?
+## MVP
 User can:
 	Visit a page to see a gallery of artists on the record label
 	Click one and visit that artist's profile page with more details
@@ -12,7 +12,8 @@ User can:
 Admin can:
 	Add, edit or delete artists from the app and the database.
 
-
+## Wishlist:
+	Artist object has an array of members as one of it's properties
 
 # Angular Info
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.

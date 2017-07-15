@@ -1,0 +1,14 @@
+<h4>Edit Artist</h4>
+
+
+<div>
+  <label for="name">New Artist Name:</label>
+  <input type="text" class="form-control" id="name" required [(ngModel)]="selectedArtist.title" name="name" #name="ngModel">
+</div>
+
+<br>
+
+
+
+<button (click)="beginUpdatingArtist(selectedArtist)">Update</button>
+<button (click)="beginDeletingArtist(selectedArtist)">Delete</button>

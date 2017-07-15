@@ -1,0 +1,46 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Artist to Roster</h3>
+  </div>
+  <div class="panel-body">
+      <!--name-->
+      <div>
+        <label>Artist Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <!--number of members field-->
+      <div>
+        <label>Number of Members:</label>
+        <br>
+        <input #newNumber>
+      </div>
+
+      <!--description field-->
+      <div>
+        <label>Genre:</label>
+        <br>
+        <textarea #newGenre></textarea>
+      </div>
+
+      <div>
+        <label>Hit Single:</label>
+        <br>
+        <textarea #newHitSingle></textarea>
+      </div>
+
+      <div>
+        <label>Image URL:</label>
+        <br>
+        <textarea #newImageUrl></textarea>
+      </div>
+
+      <!--button-->
+      <button (click)="submitForm(newName.value, newNumber.value, newGenre.value, newHitSingle.value, newImageUrl.value); newName.value=''; newnewNumber.value=''; newGenre.value=''; newHitSingle.value=''; newImageUrl.value=''">Add</button>
+
+  </div>
+</div>
+<div>
+  <app-list></app-list>
+</div>
