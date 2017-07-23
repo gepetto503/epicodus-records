@@ -4,6 +4,12 @@
   margin-top: 50px;
 }
 
+.band-image {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
 h3 {
   margin-top: 0px;
 }
@@ -19,4 +25,11 @@ h3 {
 .button {
   /*margin-left: 20px;*/
   margin-top: 12px;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  width: 50px;
+  text-align: center;
+  padding: 3px;
 }

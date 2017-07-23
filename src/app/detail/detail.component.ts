@@ -5,11 +5,13 @@ import { Artist } from '../artist.model';
 import { ArtistService } from '../artist.service';
 import { FirebaseObjectObservable } from 'angularfire2/database';
 
+
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
   styleUrls: ['./detail.component.css'],
-  providers: [ArtistService]
+  providers: [ArtistService],
+  // directives: [ROUTER_DIRECTIVES]
 })
 
 export class DetailComponent implements OnInit {
@@ -20,7 +22,8 @@ export class DetailComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location,
     private artistService: ArtistService,
-    private router: Router
+    private router: Router,
+    private _location: Location
   ) {}
 
   ngOnInit() {
@@ -32,7 +35,7 @@ export class DetailComponent implements OnInit {
 
   //navigateByUrl method lets you navigate to a route by simply passing in the name of the path, which matches the path property in app.routing.ts
   goBack() {
-    this.router.navigateByUrl('artists');
+    this._location.back();
   };
 
 

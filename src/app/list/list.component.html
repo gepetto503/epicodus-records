@@ -3,11 +3,15 @@
 
 <div *ngFor="let artist of artists | async"  class="panel panel-default">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(artist)">{{artist.name}}</h3>
+    <h3 class="linky" (click)="goToDetailPage(artist)">{{artist.name}}</h3>
 
     <!--only viewable to user when on admin route-->
     <div class="edit" *ngIf="currentRoute === '/admin'">
-      {{artist.name}}
+      <img src="{{artist.imageUrl}}" alt="picture of  {{artist.name}}">
+      <p># of members: {{artist.numberOfMembers}}</p>
+      <p>genre: {{artist.genre}}</p>
+      <p>hit single: {{artist.hitSingle}}</p>
+
       <hr>
       <app-edit [selectedArtist]="artist"></app-edit>
     </div>

@@ -1,4 +1,8 @@
 
+.linky {
+  cursor: pointer;
+}
+
 .button {
 /* on top of global button styles in styles.css*/
   margin-left: 20px;

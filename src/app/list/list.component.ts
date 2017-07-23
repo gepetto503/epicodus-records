@@ -31,8 +31,8 @@ export class ListComponent implements OnInit {
   //artist is being fed in from html, it refers to an index of the artists array which is a FirebaseListObservable type that is fed data by ArtistService, which gets it from database.list('artists').
   //so this looks in the artists array(/folder?) in the database for an object that matches the key of the clicked object, which came from the database in the first place as described above.
   goToDetailPage(clickedArtist) {
-    this.router.navigate(['artists', clickedArtist.$key]);
-  };
+    this.router.navigate(['detail', clickedArtist.$key]);
+  }
 
 
 
