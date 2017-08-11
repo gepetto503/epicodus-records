@@ -2,6 +2,27 @@
 
 If our Epicodus CSS/Design 2017 cohort ran a record label, all the bands would be named after our inside jokes, and we would have a website.  Well, GUESS WHAT?  I GOT a website JUST LIKE THAT!
 
+## Setup
+
+Clone down project from github
+Run npm install and bower install in command line
+Add Firebase credentials:
+1. go to firebase console, pick a project or create a new one, go to 'add Firebase to your web app,' copy the object stored in var config.
+2. in project, in src/app, create a file called api-keys.ts, inside paste the object inside a var called masterFirebaseConfig, like this:
+
+export var masterFirebaseConfig = {
+    apiKey: "your stuff from firebase",
+    authDomain: "your stuff from firebase",
+    databaseURL: "your stuff from firebase",
+    projectId: "your stuff from firebase",
+    storageBucket: "your stuff from firebase",
+    messagingSenderId: "your stuff from firebase"
+  };
+
+3. run npm install promise-polyfill --save-exact in command line.
+4. run apm install atom-typescript in command line.
+5. run ng serve in command line
+
 ## MVP
 User can:
 	Visit a page to see a gallery of artists on the record label
